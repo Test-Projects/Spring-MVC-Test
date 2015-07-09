@@ -11,12 +11,12 @@ public class WebAppInit extends AbstractAnnotationConfigDispatcherServletInitial
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return null; //new Class<?>[] { RootConfig.class };
+        return new Class<?>[] { RootConfig.class };
     }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return null; //new Class<?>[] { WebConfig.class };
+        return new Class<?>[] { WebConfig.class};
     }
 
 }
